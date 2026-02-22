@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* ---- Logo scroll keyframes (32s duration) ---- */
 @keyframes scrollLeft {

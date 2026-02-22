@@ -1,5 +1,6 @@
 ---
-const slackScreenshots = Array.from({ length: 34 }, (_, i) => `/images/slack/${i + 1}.png`);
+const base = import.meta.env.BASE_URL;
+const slackScreenshots = Array.from({ length: 34 }, (_, i) => `${base}images/slack/${i + 1}.png`);
 ---
 
 <section class="py-20 px-4" style="background-color: #f5f7fb;">

@@ -1,0 +1,143 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+const qaItems = [
+  { title: "How We're Different From Other Agencies", wistiaId: "gvujh4734o" },
+  { title: '"What If My Account Is Already Performing Okay"?', wistiaId: "ehnv4vqdqp" },
+  { title: "Timelines & What To Expect", wistiaId: "b9x2ow0ttr" },
+  { title: "Investment & Minimum Spend Requirements", wistiaId: "itkb1kt34e" },
+  { title: "Do We Guarantee Results?", wistiaId: "xp180u5687" },
+  { title: "How Much Time Will This Require From Me?", wistiaId: "mnxve1dwrm" },
+];
+---
+
+<Layout title="Booking Confirmed — GrowthEdge">
+  <!-- Hero Section -->
+  <section
+    class="relative flex flex-col items-center justify-center px-4 pt-12 pb-12 overflow-hidden"
+    style="background: linear-gradient(to bottom, white 0%, rgba(90, 138, 199, 0.12) 100%);"
+  >
+    <div class="absolute -top-16 -left-16 w-64 h-64 md:w-80 md:h-80 rounded-full blur-3xl opacity-30 animate-pulse" style="background-color: #5A8AC7;"></div>
+    <div class="absolute -bottom-16 -right-16 w-80 h-80 md:w-96 md:h-96 rounded-full blur-3xl opacity-30 animate-pulse" style="background-color: #5A8AC7; animation-delay: 1s;"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto text-center w-full">
+      <!-- Confirmation badge -->
+      <div
+        class="confirm-fade-in inline-flex items-center gap-2 px-5 py-2 rounded-full mb-6 text-sm font-medium"
+        style="background: rgba(90, 138, 199, 0.15); color: #5A8AC7; border: 1px solid rgba(90, 138, 199, 0.3);"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+          <polyline points="22 4 12 14.01 9 11.01" />
+        </svg>
+        Your Zoom Invite Has Been Emailed To You
+      </div>
+
+      <!-- Main headline -->
+      <h1 class="confirm-fade-in text-2xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-5" style="animation-delay: 0.1s;">
+        <span class="relative inline-block">
+          <span
+            class="absolute inset-0 -z-10"
+            style="background: #5A8AC7; opacity: 0.25; left: -6px; right: -6px; top: -3px; bottom: -3px;"
+          ></span>
+          IMPORTANT:
+        </span>{' '}
+        Read This Whole Page Before Our Call
+      </h1>
+
+      <p class="confirm-fade-in text-slate-600 text-sm md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed" style="animation-delay: 0.2s;">
+        You've completed our application process. Watch the video below for clear next steps and what to expect in your journey of making Google Ads your <strong>#1 Growth Engine</strong>.
+      </p>
+
+      <p class="confirm-fade-in text-sm font-semibold uppercase tracking-widest mb-4" style="color: #5A8AC7; animation-delay: 0.3s;">
+        Step 1: Watch The Video Below
+      </p>
+
+      <!-- Main VSL -->
+      <div class="confirm-fade-in relative max-w-3xl mx-auto shadow-2xl rounded-xl overflow-hidden" style="animation-delay: 0.4s;">
+        <style>
+          wistia-player[media-id='723qfwjj16']:not(:defined) {
+            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/723qfwjj16/swatch');
+            display: block;
+            filter: blur(5px);
+            padding-top: 56.25%;
+          }
+        </style>
+        <wistia-player media-id="723qfwjj16" aspect="1.7777777777777777"></wistia-player>
+      </div>
+    </div>
+  </section>
+
+  <!-- Step 2: Q&A Videos -->
+  <section
+    class="py-16 px-4"
+    style="background: linear-gradient(to bottom, rgba(90, 138, 199, 0.12) 0%, rgba(90, 138, 199, 0.06) 60%, white 100%);"
+  >
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-sm font-semibold uppercase tracking-widest mb-3" style="color: #5A8AC7;">Step 2</p>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900">
+          A Few Common Questions Answered...
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {qaItems.map((item, index) => (
+          <div
+            class="fade-in-up bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+            style={`border: 1px solid rgba(90, 138, 199, 0.15); transition-delay: ${index * 0.07}s;`}
+          >
+            <div
+              class="px-5 py-4 text-sm font-semibold text-slate-800 border-b"
+              style="border-color: rgba(90, 138, 199, 0.15); background: rgba(90, 138, 199, 0.05);"
+            >
+              {item.title}
+            </div>
+            <div class="p-0">
+              <style set:html={`wistia-player[media-id='${item.wistiaId}']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/${item.wistiaId}/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }`} />
+              <wistia-player media-id={item.wistiaId} aspect="1.7777777777777777"></wistia-player>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* Confirmation page entrance animations */
+  @keyframes confirmFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .confirm-fade-in {
+    opacity: 0;
+    animation: confirmFadeIn 0.5s ease-out forwards;
+  }
+</style>
+
+<script>
+  // Load Wistia scripts for confirmation page
+  const mainScript = document.createElement('script');
+  mainScript.src = 'https://fast.wistia.com/embed/723qfwjj16.js';
+  mainScript.async = true;
+  mainScript.type = 'module';
+  document.head.appendChild(mainScript);
+
+  // Breakout video script
+  const breakoutScript = document.createElement('script');
+  breakoutScript.src = 'https://fast.wistia.com/embed/xp180u5687.js';
+  breakoutScript.async = true;
+  breakoutScript.type = 'module';
+  document.head.appendChild(breakoutScript);
+</script>

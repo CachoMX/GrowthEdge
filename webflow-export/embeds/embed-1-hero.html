@@ -1,0 +1,52 @@
+<!-- Global SVG Filter (used by text-highlight) -->
+<svg style="display:none">
+  <filter id="grizzle">
+    <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" result="noise" seed="5"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="3,3" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<div class="page">
+  <!-- Noise overlay -->
+  <div class="noise-overlay"></div>
+
+  <div class="page-content">
+
+    <!-- =============================================
+         HERO SECTION
+         ============================================= -->
+    <section class="section-hero">
+      <div class="hero-orb hero-orb--tl"></div>
+      <div class="hero-orb hero-orb--br"></div>
+
+      <div class="hero-inner">
+        <!-- Eyebrow -->
+        <p class="hero-eyebrow">
+          <span class="eyebrow-highlight">For Brands Spending $10K+ Per Month on Google Ads</span>
+        </p>
+
+        <!-- Headline -->
+        <h1 class="hero-title">
+          We <span class="text-highlight">Scale</span> Your <span class="text-highlight">Google Ads</span> <span class="text-highlight">Exponentially</span> While Your <span class="text-highlight">ROAS</span> Stays <span class="text-highlight">Dialled</span>.
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="hero-sub">
+          We have driven $150M+ for 200+ brands — from $30k months to $1.3M months.
+        </p>
+
+        <!-- Video -->
+        <div class="hero-video">
+          <wistia-player media-id="gnbxkqnma5" aspect="1.7777777777777777"></wistia-player>
+        </div>
+
+        <!-- CTA -->
+        <div class="hero-cta">
+          <button class="btn-cta btn-cta--hero btn-cta-scroll">
+            Book A Strategy Call
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-pulse"><path d="m9 9 5 12 1.8-5.2L21 14Z"/><path d="M7.2 2.2 8 5.1"/><path d="m5.1 8-2.9-.8"/><path d="M14 4.1 12 6"/><path d="m6 12-1.9 2"/></svg>
+          </button>
+          <p class="hero-cta-note">*Quick 30 Second Application*</p>
+        </div>
+      </div>
+    </section>

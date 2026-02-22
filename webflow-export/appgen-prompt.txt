@@ -1,0 +1,268 @@
+Build a full landing page for "GrowthEdge" — a Google Ads agency for e-commerce brands. The design should be clean, modern, and professional with a blue-and-white color scheme.
+
+BRAND COLORS:
+- Primary blue: #5A8AC7
+- Background: white to light blue gradients
+- Text: dark slate (#0f172a for headings, #475569 for body)
+- Highlighted text: words wrapped in a light blue background highlight (rgba(90, 138, 199, 0.25))
+
+FONTS: System sans-serif stack. Headings are bold, body text is regular weight.
+
+PAGE STRUCTURE (8 sections in this exact order):
+
+---
+
+SECTION 1: HERO
+Background: white fading to light blue (rgba(90,138,199,0.12))
+- Eyebrow text (small, blue): "For Brands Spending $10K+ Per Month on Google Ads" (highlighted background)
+- Main headline (large, bold): "We Scale Your Google Ads Exponentially While Your ROAS Stays Dialled." — highlight these words with blue background: "Scale", "Google Ads", "Exponentially", "ROAS", "Dialled"
+- Subheadline: "We have driven $150M+ for 200+ brands — from $30k months to $1.3M months."
+- Embedded video: Wistia player with media-id "gnbxkqnma5" (16:9 aspect ratio, max-width 768px centered, large shadow)
+- CTA button: "Book A Strategy Call" — full width (max 768px), rounded pill shape, blue glassmorphic style (rgba(90,138,199,0.85) with backdrop blur, white text, subtle box shadow)
+- Below button: "*Quick 30 Second Application*" (small gray text)
+
+---
+
+SECTION 2: LOGO SCROLL
+Background: light blue gradient fading to white
+- Label: "TRUSTED BY LEADING BRANDS" (small, centered, gray, uppercase)
+- Two rows of logos scrolling infinitely (top row scrolls left, bottom row scrolls right)
+- Each logo is grayscale, 60% opacity, 160px wide
+- Fade edges on left and right sides
+
+Top row logos (these image URLs):
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/4682b250a_logo_white_2.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/da6c1c406_Asset_7_6336b6d1-6aa1-49c5-8ea0-40fbf636787c_1001x255.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/6c42b30d3_Indoor-Golf-Outlet-Logo-White-600x200_a35ad9cd-4ec5-4b6b-8130-bf79b501f677_400x.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/3993b9899_Krush_Medium_Banner_US_Landscape.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ec10cbc91_Lyric_Cycles_Vintage_7__white_no_details_500x.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/c53bb2455_new-logo-premium-saunas_600x.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ddc71b32d_image.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/229d91707_pngimg_com_-_garmin_PNG7.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/cef8be0d6_Royal_Fire_Pits_Logo_No_Background_600x125_px__1_.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/992ac3ef7_Screenshot_2024-12-04_at_1_09_40_pm.png
+
+Bottom row logos:
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/efc02a056_SleepBySanti_White_250x_2x.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/286530eea_TAVOlabels_all_2-07_eb3dfd3a-53cc-44a1-9cbc-d383a1913dfe.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ee443bc2b_vitallogo.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/1053d16ae_White_Logo_Checkout_3_b78bb9d9-9a1a-4f36-900d-b4082364124d.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ae5c31af1_STRIDE_logo.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/af12a2050_Daily_Dose_logo.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/8bac5ce09_fernes_logo1.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/e6e3346f1_MATTE_Collection_logo.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ecd19cdcf_Lakewood_University_logo.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/50a808264_image.png
+
+---
+
+SECTION 3: CASE STUDIES
+Background: white
+- Section heading: "The Brands We Are Scaling. The Numbers They Hit." — highlight "The Numbers They Hit."
+- List of case study cards. Each card has: title (with dollar amounts highlighted in blue), subtitle (blue text), bullet point description, and a proof image on the right side.
+- Between every 2 cards, insert a "Book A Strategy Call" CTA button (same blue pill style).
+
+CASE STUDY CARDS (in order):
+
+1. Title: "Indoor Golf Outlet: $1.86M → $27.2M | 14.6x ROAS Over 19 Months"
+   Subtitle: "Consistently scaled $600K to $4M+ monthly over 19 months"
+   Description: "Consistently scaled from $600K to $4M+ monthly revenue over 19 months — 70% driven by Google Ads. High AOV account scaled exclusively through Google Shopping with strategic product segmentation."
+   Media: Vimeo video embed (https://player.vimeo.com/video/1164842822)
+
+2. Title: "Subscription Brand: $208K → $427K in 30 Days via Google Demand Gen Image/Video Ads | 2.05x ROAS"
+   Subtitle: "Demand Gen Strategy: 7 active campaigns, all profitable"
+   Description: "Diversified Demand Gen strategy: 7 active campaigns all maintaining profitability. $208K monthly spend across image/video ads generating $427K revenue. Top performer at 2.13x ROAS ($106K → $227K from TOF campaign)."
+   Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/05419ba21_Screenshot2026-02-15at32209pm.png
+
+3. Title: "Health Brand: $623K Google Ads Spend Generated $1.34M Revenue (2.14x ROAS) in 30 Day Period"
+   Subtitle: "Monthly performance at significant scale"
+   Description: "Monthly performance: $623K spend → $1.34M revenue via Google Ads. Health/wellness brand maintaining 2.14x ROAS at significant scale. Sustainable growth: 6-figure ad spend generating 7-figure monthly revenue."
+   Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/d9019f7e7_image.png
+
+4. Title: "Supplement Brand: Aggressively Scaled from $39K to $1.3M Monthly Revenue via Google Ads | 34x Growth in 4 Months"
+   Subtitle: "Aggressively scaled spend while maintaining profitability"
+   Description: "Feb performance vs June 2025: Scaled monthly revenue from $39K to $1.3M through Google Ads (34x growth). Aggressively increased spend from $11.7K to $623K/month while maintaining profitability. E-commerce brand: Massive revenue scaling demonstrating Google Ads as primary growth channel."
+   Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/0e4315aa1_image.png
+
+5. Title: "Krush Kandy: $101K → $386K in 4 Months | 3.8x ROAS"
+   Subtitle: "Cut acquisition costs 27% while scaling 4x revenue"
+   Description: "4-month performance: 142K clicks, 382% ROAS (up 103% vs prior period). Cut acquisition costs 27% while scaling spend from $38K to $101K. Fashion brand growth through targeted Google Ads strategy."
+   Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/4a78e7325_image.png
+
+6. Title: "Matte Collection: $145K → $1.2M in 10 Weeks | 8.27x ROAS"
+   Subtitle: "Maintained 8x+ ROAS while scaling aggressively"
+   Description: "Aggressive 10-week scale: Increased spend by $70.9K while maintaining 8x+ ROAS. 316K clicks generated (up 184K from previous period). Sustained high performance at $13.23 cost per conversion during rapid growth phase. Average order value increased by over 100 percent."
+   Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/b7de8e501_image.png
+
+7. Title: "Fashion Brand: Unlocked $681K in New Customer Revenue (+162%) | $1.24M Total Revenue (+106%) in 65 Days"
+   Subtitle: "Solved new customer scaling problem with Google Ads"
+   Description: "Solved new customer scaling problem: 162% revenue growth from new buyers ($681K). Overall performance: 96% spend increase → 106% revenue increase ($1.24M). Fashion brand breakthrough: New customer acquisition channel unlocked via Google Ads."
+   Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/97ded66ea_image.png
+
+8. Title: "Premium Saunas: $198K → $1.74M Over 5 Months | 8.8x ROAS using Google Ads"
+   Subtitle: "Doubled Shopify revenue while maintaining profitability"
+   Description: "More than doubled Shopify revenue in 6 months — scaling from ~$330K/month to ~$760K/month using Google Ads as the primary growth engine. Scaled Shopify revenue while maintaining profitable 8–11× ROAS at scale."
+   Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/c1c4b0f53_image.png
+
+9. Title: "The Sauna Heater: $367K → $800K Monthly | 118% Growth"
+   Subtitle: "Scaled to consistent $800K+ monthly in 3 months"
+   Description: "Scaled The Sauna Heater from $367K to $800K+ monthly revenue in just 3 months using Google Ads. Achieved consistent 800K+ month revenues through strategic cold traffic optimization."
+   Media: Loom embed (https://www.loom.com/embed/b1223893548949cf99b52c1e80552c46)
+
+10. Title: "Off-Grid Source: $524K Spend → $5.06M Revenue | 9.64x ROAS"
+    Subtitle: "Annual results with consistent 9-10x returns throughout"
+    Description: "Annual results: $5.06M revenue from $524K ad spend (9.64x ROAS). Steady scaling throughout 2025 with consistent 9-10x returns. Off-grid product retailer: High-efficiency Google Ads performance year-round."
+    Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ff1a5acfa_image.png
+
+11. Title: "Home Improvement Brand: $445K → $2.93M Over 7 Months | 6.6x ROAS"
+    Subtitle: "Jun-Dec 2025: 252K clicks generating consistent profits"
+    Description: "Jun-Dec 2025: $2.93M revenue from $445K ad spend (6.6x ROAS). 252K clicks generated across home improvement product campaigns. Steady performance: Maintained profitability throughout second half of 2025."
+    Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/396c00f0c_image.png
+
+12. Title: "Tavo Sleep: No Google Ads Presence → $158K Revenue in 4 Months From Scratch (2.78x ROAS)"
+    Subtitle: "Built profitable channel from ground zero in 4 months"
+    Description: "Previously not using Google Ads — built profitable channel from ground zero. 4-month launch period: $158K revenue at 2.78x ROAS. Established sustainable acquisition channel for sleep products brand."
+    Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/50561943e_image.png
+
+13. Title: "Sleep by Santi: Steady Growth — $163K Spend → $587K Revenue (3.6x ROAS)"
+    Subtitle: "4-month consistent scale with steady upward performance"
+    Description: "4-month consistent scale: $163K → $587K with 3.6x ROAS. 101K clicks driving steady conversion growth month-over-month. Sustainable scaling: No volatility, just steady upward performance."
+    Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/8ce2d0d58_image.png
+
+14. Title: "Fire Company: Aggressive 6-Month Scale — $187K → $1.67M (8.9x ROAS)"
+    Subtitle: "Maintained efficiency during rapid 6-month growth phase"
+    Description: "6-month aggressive scale: Increased spend $151K while growing revenue $1.26M. $187K investment generated $1.67M (8.9x ROAS) maintaining efficiency during rapid growth. 102K clicks (+74.2K) driving massive conversion volume increase."
+    Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/a3ac0425c_image.png
+
+15. Title: "Record-Breaking November 2025: $2.73M in a Single Month"
+    Subtitle: "Highest revenue month ever via Google Shopping"
+    Description: "November 2025: Highest revenue month ever — $2.73M from Google Shopping on $169K spend (16x ROAS). High-ticket reseller scaled exclusively through mass product segmentation via Google Shopping."
+    Image: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ef4551600_image.png
+
+After all case studies, add a final "Book A Strategy Call" button with "*Quick 30 Second Application*" text below.
+
+---
+
+SECTION 4: SLACK PROOF (Social Proof)
+Background: #f5f7fb (light gray-blue)
+- Heading: "Straight From the Client Chat." — highlight "Straight" with a badge-style blue highlight and "Client Chat" with the standard blue highlight
+- Masonry grid of 34 images (5 columns on desktop, 3 on tablet, 2 on mobile) with small gaps
+- Each image is clickable and opens in a fullscreen modal/lightbox overlay
+- All 34 image URLs:
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/1da2d9fe2_1.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/04a07d5c7_2.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/bb50d1fb3_3.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/fe3c0c3c1_4.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/3a90ccfd7_5.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/45907a6b2_6.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/61cfb53d9_7.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/dd4c2ecdf_8.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/58fb7794f_9.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/3dd449126_10.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/9e6779482_11.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/9a0741cec_12.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/1ef4c6611_13.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/fd36e1bf3_14.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/3dc6108b4_15.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/08845a4df_16.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/aef92f0d8_17.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/771d20281_18.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/8d518977e_19.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/7640830f6_20.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/aaf2bc1ac_21.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/0678ced64_22.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/39cf358c7_23.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/be6cc0cae_24.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/7ebee3410_25.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/bdd6cd366_26.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/9572e2a10_27.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/dbb65e86b_28.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/be682a589_29.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/b391cc676_30.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/aceadadc6_31.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/f1aa23c46_32.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/2cb097e31_33.png
+https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/fabd8991a_34.png
+
+---
+
+SECTION 5: TYPEFORM (Application Form)
+Background: white
+- Heading: "Book A Call - Let's See If We Are A Fit" — highlight "Let's See If We Are A Fit"
+- Embedded Typeform widget using data-tf-live="01JXJ5CSGX8M3S9ESNPMX26T69" (needs Typeform embed script: //embed.typeform.com/next/embed.js)
+- Container max-width 800px, min-height 500px
+
+---
+
+SECTION 6: ABOUT US (Meet The Owners)
+Background: light blue gradient
+- Heading: "Meet The Owners" — highlight "The Owners"
+- Subheading: "Built by entrepreneurs who've scaled brands to millions — and now we help you do the same"
+- Two team member cards side by side (stacked on mobile), each with glassmorphic styling (white/translucent background, backdrop blur, rounded corners, subtle border)
+
+Team Member 1:
+- Photo: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/b1cf7ed2a_dRvIr9eTzBqYKHkIvPW8j2f8lc.jpeg
+- Name: Joel Davies
+- Role: Founder
+- Bio: "The founder of GrowthEdge and a hands-on entrepreneur with a track record of building and scaling multiple successful brands. He's deeply focused on helping businesses unlock more growth from Google—bringing a practical, operator's mindset to acquisition, experimentation, and performance. He's known for spotting high-leverage opportunities others miss, simplifying complex problems into clear next steps, and pushing for execution that drives measurable results. Whether he's shaping strategy or diving into the details, Joel brings a calm, data-led approach and a strong bias toward action."
+
+Team Member 2:
+- Photo: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/de02a45c4_N5J8vpOxU7xbzz4c5is8mdGJZM.jpeg
+- Name: Jack Davies
+- Role: Founder
+- Bio: "With 8 years experience in ecommerce from the early days of the industry, to running a 7-figure high-ticket reselling store, Jack's path has led to the birth of GrowthEdge. Seeing an opportunity in the space for someone who has truly grown their own brand to enter the agency scene and do things differently. Outside of this with any spare time, Jack spends time attending Richmond games, travelling with his wife, and collecting 4k movies."
+
+---
+
+SECTION 7: OFFER
+Background: white
+- Badge: "Here's Our Offer To You" (small blue pill/badge)
+- Heading: "How We Double Your Revenue With Ads" then line break "Launched In 3 Days" — highlight "Launched In 3 Days"
+- Subheading: "Everything is completely Done For You. Here is everything handled in our offer for you."
+- 6 service items in a vertical list, each with an icon on the left and title + description on the right:
+
+1. Icon: Search/magnifying glass
+   Title: "Full Google & YouTube Ads Account Audit & Cleanup"
+   Desc: "Comprehensive analysis of your current setup to identify quick wins and optimization opportunities"
+
+2. Icon: Bar chart
+   Title: "Complete Google Keyword, Market & Competitor Research"
+   Desc: "Deep dive into your category to see what competitors are doing — and build a strategy that positions your brand to win"
+
+3. Icon: Settings/gear
+   Title: "Complete Google & YouTube Ads Campaign Buildout"
+   Desc: "A tailored campaign structure built specifically around your products, margins, and customer journey - not a cookie-cutter template"
+
+4. Icon: Users/people
+   Title: "Expert-Led Campaign Management for 30 Days"
+   Desc: "Hands-on execution from day one, with senior media buyers managing and optimizing your account end-to-end"
+
+5. Icon: Target/bullseye
+   Title: "80/20 Scaling Framework"
+   Desc: "We identify your highest-performing campaigns, products, and keywords — then put 80% of spend behind them while 20% tests new opportunities"
+
+6. Icon: Layers/stack
+   Title: "Google & YouTube Creative Growth Framework"
+   Desc: "We roll out your top creatives across Google's ecosystem — YouTube, Display, Shopping, and Search — managing it end-to-end"
+
+After the list:
+- "Ready to get started?" heading
+- "Apply below for a quick consultation with our team." subtext
+- "Book A Strategy Call" CTA button (same blue pill style)
+- "*30 Second Application*" note below
+
+---
+
+SECTION 8: FOOTER
+Background: dark (#0f172a)
+- "GrowthEdge" brand name (white, centered)
+- Disclaimer: "This site is not a part of the Facebook™ website or Meta Platforms, Inc. Additionally, this site is NOT endorsed by Facebook™ in any way. Facebook™ is a trademark of Meta Platforms, Inc."
+- Copyright: "© 2026 GrowthEdge. All rights reserved."
+
+---
+
+GLOBAL BEHAVIORS:
+- All "Book A Strategy Call" buttons should smooth-scroll to the Typeform section
+- Elements should animate in (fade up) as they scroll into view
+- Page should be fully responsive (mobile-first)
+- All images use object-fit: contain

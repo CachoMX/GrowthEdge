@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Logo scroll keyframes (32s duration) ---- */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.logo-scroll-left {
+  animation: scrollLeft 32s linear infinite;
+}
+.logo-scroll-right {
+  animation: scrollRight 32s linear infinite;
+}
+
+/* ---- CTA icon pulse ---- */
+@keyframes ctaPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+.cta-icon-pulse {
+  animation: ctaPulse 0.6s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* ---- Noise-texture highlight (card titles) ---- */
+.text-highlight-card {
+  position: relative;
+  display: inline;
+}
+.text-highlight-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #5A8AC7;
+  opacity: 0.25;
+  left: 0px;
+  right: 0px;
+  top: -3px;
+  bottom: -3px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0' result='desaturated'/%3E%3CfeComponentTransfer in='desaturated'%3E%3CfeFuncA type='linear' slope='0.15'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23000000' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+
+/* ---- Grizzle text highlight (section headings, with SVG filter) ---- */
+.text-highlight-grizzle {
+  position: relative;
+  display: inline-block;
+}
+.text-highlight-grizzle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #5A8AC7;
+  opacity: 0.25;
+  filter: url(#grizzle);
+  left: -6px;
+  right: -6px;
+  top: -3px;
+  bottom: -3px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0' result='desaturated'/%3E%3CfeComponentTransfer in='desaturated'%3E%3CfeFuncA type='linear' slope='0.15'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23000000' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+
+/* ---- Wide variant for section headings ---- */
+.text-highlight-grizzle-wide {
+  position: relative;
+  display: inline-block;
+}
+.text-highlight-grizzle-wide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #5A8AC7;
+  opacity: 0.25;
+  filter: url(#grizzle);
+  left: -8px;
+  right: -8px;
+  top: -4px;
+  bottom: -4px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0' result='desaturated'/%3E%3CfeComponentTransfer in='desaturated'%3E%3CfeFuncA type='linear' slope='0.15'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23000000' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+
+/* ---- Noise eyebrow badge ---- */
+.noise-badge {
+  background: rgba(90, 138, 199, 0.25);
+  padding: 2px 6px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0' result='desaturated'/%3E%3CfeComponentTransfer in='desaturated'%3E%3CfeFuncA type='linear' slope='0.15'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23000000' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-blend-mode: multiply;
+}
+
+/* ---- Slack "Straight" highlight ---- */
+.slack-straight-highlight {
+  background: linear-gradient(135deg, rgba(90, 138, 199, 0.25) 0%, rgba(90, 138, 199, 0.25) 100%);
+  padding: 2px 8px;
+}
+
+/* ---- CTA button base ---- */
+.cta-button {
+  background: rgba(90, 138, 199, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 8px 32px 0 rgba(90, 138, 199, 0.4), inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* ---- Scroll fade-in animation ---- */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

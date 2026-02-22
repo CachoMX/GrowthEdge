@@ -1,0 +1,384 @@
+---
+interface CaseStudy {
+  caseNumber: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  fromValue: string;
+  toValue: string;
+  timeframe: string;
+  proofImage?: string;
+  proofImage2?: string;
+  proofVideo?: string;
+  beforeImage?: string;
+  afterImage?: string;
+  testimonialImage?: string;
+  hideTestimonialLabel?: boolean;
+}
+
+const caseStudies: CaseStudy[] = [
+  {
+    caseNumber: 1,
+    title: "Indoor Golf Outlet: $1.86M → $27.2M | 14.6x ROAS Over 19 Months",
+    subtitle: "Consistently scaled $600K to $4M+ monthly over 19 months",
+    description: "Consistently scaled from $600K to $4M+ monthly revenue over 19 months — 70% driven by Google Ads. High AOV account scaled exclusively through Google Shopping with strategic product segmentation.",
+    fromValue: "$1.86M",
+    toValue: "$27.2M",
+    timeframe: "19 Months",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ff1a5acfa_image.png",
+    testimonialImage: "https://cdn.gamma.app/c4u9k0hhxbrq5tg/b043e65cba3a447bb18386e3ed307ffb/original/image-24.png"
+  },
+  {
+    caseNumber: 2,
+    title: "Subscription Brand: $208K → $427K in 30 Days via Google Demand Gen Image/Video Ads | 2.05x ROAS",
+    subtitle: "Demand Gen Strategy: 7 active campaigns, all profitable",
+    description: "Diversified Demand Gen strategy: 7 active campaigns all maintaining profitability. $208K monthly spend across image/video ads generating $427K revenue. Top performer at 2.13x ROAS ($106K → $227K from TOF campaign).",
+    fromValue: "$208K",
+    toValue: "$427K",
+    timeframe: "30 Days",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/05419ba21_Screenshot2026-02-15at32209pm.png"
+  },
+  {
+    caseNumber: 3,
+    title: "Health Brand: $623K Google Ads Spend Generated $1.34M Revenue (2.14x ROAS) in 30 Day Period",
+    subtitle: "Monthly performance at significant scale",
+    description: "Monthly performance: $623K spend → $1.34M revenue via Google Ads. Health/wellness brand maintaining 2.14x ROAS at significant scale. Sustainable growth: 6-figure ad spend generating 7-figure monthly revenue.",
+    fromValue: "$623K",
+    toValue: "$1.34M",
+    timeframe: "30 Days",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/d9019f7e7_image.png"
+  },
+  {
+    caseNumber: 4,
+    title: "Supplement Brand: Aggressively Scaled from $39K to $1.3M Monthly Revenue via Google Ads | 34x Growth in 4 Months",
+    subtitle: "Aggressively scaled spend while maintaining profitability",
+    description: "Feb performance vs June 2025: Scaled monthly revenue from $39K to $1.3M through Google Ads (34x growth). Aggressively increased spend from $11.7K to $623K/month while maintaining profitability. E-commerce brand: Massive revenue scaling demonstrating Google Ads as primary growth channel.",
+    fromValue: "$39K/mo",
+    toValue: "$1.3M/mo",
+    timeframe: "4 Months",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/0e4315aa1_image.png"
+  },
+  {
+    caseNumber: 5,
+    title: "Krush Kandy: $101K → $386K in 4 Months | 3.8x ROAS",
+    subtitle: "Cut acquisition costs 27% while scaling 4x revenue",
+    description: "4-month performance: 142K clicks, 382% ROAS (up 103% vs prior period). Cut acquisition costs 27% while scaling spend from $38K to $101K. Fashion brand growth through targeted Google Ads strategy.",
+    fromValue: "$101K",
+    toValue: "$386K",
+    timeframe: "4 Months",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/4a78e7325_image.png"
+  },
+  {
+    caseNumber: 6,
+    title: "Matte Collection: $145K → $1.2M in 10 Weeks | 8.27x ROAS",
+    subtitle: "Maintained 8x+ ROAS while scaling aggressively",
+    description: "Aggressive 10-week scale: Increased spend by $70.9K while maintaining 8x+ ROAS. 316K clicks generated (up 184K from previous period). Sustained high performance at $13.23 cost per conversion during rapid growth phase. Average order value increased by over 100 percent.",
+    fromValue: "$145K",
+    toValue: "$1.2M",
+    timeframe: "10 Weeks",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/b7de8e501_image.png"
+  },
+  {
+    caseNumber: 7,
+    title: "Fashion Brand: Unlocked $681K in New Customer Revenue (+162%) | $1.24M Total Revenue (+106%) in 65 Days",
+    subtitle: "Solved new customer scaling problem with Google Ads",
+    description: "Solved new customer scaling problem: 162% revenue growth from new buyers ($681K). Overall performance: 96% spend increase → 106% revenue increase ($1.24M). Fashion brand breakthrough: New customer acquisition channel unlocked via Google Ads.",
+    fromValue: "Can't Scale",
+    toValue: "$681K New",
+    timeframe: "65 Days",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/97ded66ea_image.png"
+  },
+  {
+    caseNumber: 8,
+    title: "Premium Saunas: $198K → $1.74M Over 5 Months | 8.8x ROAS using Google Ads",
+    subtitle: "Doubled Shopify revenue while maintaining profitability",
+    description: "More than doubled Shopify revenue in 6 months — scaling from ~$330K/month to ~$760K/month using Google Ads as the primary growth engine. Scaled Shopify revenue while maintaining profitable 8–11× ROAS at scale.",
+    fromValue: "$198K",
+    toValue: "$1.74M",
+    timeframe: "5 Months",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/c1c4b0f53_image.png"
+  },
+  {
+    caseNumber: 9,
+    title: "The Sauna Heater: $367K → $800K Monthly | 118% Growth",
+    subtitle: "Scaled to consistent $800K+ monthly in 3 months",
+    description: "Scaled The Sauna Heater from $367K to $800K+ monthly revenue in just 3 months using Google Ads. Achieved consistent 800K+ month revenues through strategic cold traffic optimization.",
+    fromValue: "$367k/mo",
+    toValue: "$800k/mo",
+    timeframe: "3 Months",
+    proofVideo: "https://www.loom.com/embed/b1223893548949cf99b52c1e80552c46"
+  },
+  {
+    caseNumber: 11,
+    title: "Off-Grid Source: $524K Spend → $5.06M Revenue | 9.64x ROAS",
+    subtitle: "Annual results with consistent 9-10x returns throughout",
+    description: "Annual results: $5.06M revenue from $524K ad spend (9.64x ROAS). Steady scaling throughout 2025 with consistent 9-10x returns. Off-grid product retailer: High-efficiency Google Ads performance year-round.",
+    fromValue: "$524K",
+    toValue: "$5.06M",
+    timeframe: "12 Months",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ff1a5acfa_image.png"
+  },
+  {
+    caseNumber: 12,
+    title: "Home Improvement Brand: $445K → $2.93M Over 7 Months | 6.6x ROAS",
+    subtitle: "Jun-Dec 2025: 252K clicks generating consistent profits",
+    description: "Jun-Dec 2025: $2.93M revenue from $445K ad spend (6.6x ROAS). 252K clicks generated across home improvement product campaigns. Steady performance: Maintained profitability throughout second half of 2025.",
+    fromValue: "$445K",
+    toValue: "$2.93M",
+    timeframe: "7 Months",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/396c00f0c_image.png"
+  },
+  {
+    caseNumber: 13,
+    title: "Tavo Sleep: No Google Ads Presence → $158K Revenue in 4 Months From Scratch (2.78x ROAS)",
+    subtitle: "Built profitable channel from ground zero in 4 months",
+    description: "Previously not using Google Ads — built profitable channel from ground zero. 4-month launch period: $158K revenue at 2.78x ROAS. Established sustainable acquisition channel for sleep products brand.",
+    fromValue: "No Presence",
+    toValue: "$158K",
+    timeframe: "4 Months",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/50561943e_image.png"
+  },
+  {
+    caseNumber: 14,
+    title: "Sleep by Santi: Steady Growth — $163K Spend → $587K Revenue (3.6x ROAS)",
+    subtitle: "4-month consistent scale with steady upward performance",
+    description: "4-month consistent scale: $163K → $587K with 3.6x ROAS. 101K clicks driving steady conversion growth month-over-month. Sustainable scaling: No volatility, just steady upward performance.",
+    fromValue: "$163K",
+    toValue: "$587K",
+    timeframe: "4 Months",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/8ce2d0d58_image.png"
+  },
+  {
+    caseNumber: 15,
+    title: "Fire Company: Aggressive 6-Month Scale — $187K → $1.67M (8.9x ROAS)",
+    subtitle: "Maintained efficiency during rapid 6-month growth phase",
+    description: "6-month aggressive scale: Increased spend $151K while growing revenue $1.26M. $187K investment generated $1.67M (8.9x ROAS) maintaining efficiency during rapid growth. 102K clicks (+74.2K) driving massive conversion volume increase.",
+    fromValue: "$187K",
+    toValue: "$1.67M",
+    timeframe: "6 Months",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/a3ac0425c_image.png"
+  },
+  {
+    caseNumber: 16,
+    title: "Record-Breaking November 2025: $2.73M in a Single Month",
+    subtitle: "Highest revenue month ever via Google Shopping",
+    description: "November 2025: Highest revenue month ever — $2.73M from Google Shopping on $169K spend (16x ROAS). High-ticket reseller scaled exclusively through mass product segmentation via Google Shopping.",
+    fromValue: "$169K",
+    toValue: "$2.73M",
+    timeframe: "1 Month",
+    proofImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ef4551600_image.png"
+  }
+];
+
+// Server-side title highlighting: wrap money pattern matches in <span class="text-highlight-card">
+function highlightTitle(titleRaw: string, caseNumber: number): string {
+  const text = titleRaw.replace(/\n/g, ' ');
+
+  const patterns: RegExp[] = [
+    /\$158K\s+Revenue\s+in\s+4\s+Months/g,
+    /\$208K\s*→\s*\$427K/g,
+    /\$163K\s+Spend\s*→\s*\$587K\s+Revenue/g,
+    /\$445K\s+→/g,
+    /\$2\.93M\s+Over\s+7\s+Months/g,
+    /\$39K\s+to\s+\$1\.3M\s+Monthly/g,
+    /\$1\.86M\s+→\s+\$27\.2M/g,
+    /\$101K\s+→\s+\$386K/g,
+    /\$145K\s+→\s+\$1\.2M/g,
+    /Generated\s+\$1\.34M\s+Revenue/g,
+    /\$1\.24M\s+Total\s+Revenue\s+\(\+106%\)/g,
+    /\$198K\s+→\s+\$1\.74M/g,
+    /\$367K\s+→\s+\$800K/g,
+    /\$5\.06M\s+Revenue/g,
+    /\$524K\s+Spend\s+→/g,
+    /\$187K\s+→\s+\$1\.67M\s+\(8\.9x\s+ROAS\)/g,
+    /\$2\.73M\s+in\s+a\s+Single\s+Month/g,
+    /\$[\d,.]+[KMB]?\s*→\s*\$[\d,.]+[KMB]?\s*\|\s*[\d,.]+x\s+ROAS/g,
+    /\$[\d,.]+[KMB]?\s+Spend\s*→\s*\$[\d,.]+[KMB]?\s+Revenue\s*\|\s*[\d,.]+x\s+ROAS/g,
+    /\$[\d,.]+[KMB]?\s+Spend\s*→\s*\$[\d,.]+[KMB]?\s+Revenue\s*\([\d,.]+x\s+ROAS\)/g,
+    /\$[\d,.]+[KMB]?\s+Revenue\s+\([\d,.]+x\s+ROAS\)/g,
+    /\$[\d,.]+[KMB]?\s*→\s*\$[\d,.]+[KMB]?\s+Monthly/g,
+    /→\s*\$[\d,.]+[KMB]?\s+Revenue(?:\s+\||$)/g,
+    /→\s*\$[\d,.]+[KMB]?\s*\([\d,.]+x\s+ROAS\)/g,
+    /\$[\d,.]+[KMB]?\s+in\s+a\s+Single\s+Month/g,
+    /\$[\d,.]+[KMB]?\s+\(\+[\d,]+%\)/g,
+  ];
+
+  if (caseNumber !== 13) {
+    patterns.push(
+      /→\s*\$[\d,.]+[KMB]?\s+Revenue\s+in\s+\d+\s+Months\s+From\s+Scratch\s+\([\d,.]+x\s+ROAS\)/g,
+      /\$[\d,.]+[KMB]?\s+Revenue\s+in\s+\d+\s+Months\s+From\s+Scratch\s+\([\d,.]+x\s+ROAS\)/g,
+    );
+  }
+
+  let bestMatch: RegExpExecArray | null = null;
+
+  for (const pattern of patterns) {
+    pattern.lastIndex = 0;
+    const m = pattern.exec(text);
+    if (m) {
+      if (!bestMatch || m.index < bestMatch.index) {
+        bestMatch = m;
+      }
+    }
+  }
+
+  if (!bestMatch) {
+    // Fallback: highlight individual money values
+    return text.replace(/(\$[\d,.]+[KMB]?)/g, '<span class="text-highlight-card">$1</span>');
+  }
+
+  const matchStr = bestMatch[0];
+  let before = text.substring(0, bestMatch.index);
+  let highlight = matchStr;
+  let after = text.substring(bestMatch.index + matchStr.length);
+
+  // If match ends with ' in', move that outside the highlight
+  if (highlight.endsWith(' in')) {
+    highlight = highlight.slice(0, -3);
+    after = ' in' + after;
+  }
+
+  return `${before}<span class="text-highlight-card">${highlight}</span>${after}`;
+}
+
+// CTA button SVG icon (mouse pointer click)
+const ctaIconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="m9 9 5 12 1.774-5.226L21 14 9 9z" /><path d="m16.071 16.071 4.243 4.243" /><path d="m7.188 2.239.777 2.897" /><path d="M5.136 7.965l-2.898-.777" /><path d="M14.869 5.136l2.898-.777" /><path d="m2.239 14.869.777-2.898" /></svg>`;
+
+// Arrow icon for before/after
+const arrowDownSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 rotate-90" style="color: #5A8AC7;"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>`;
+---
+
+<section class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-6">
+      <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-4 whitespace-normal md:whitespace-nowrap relative inline-block px-4 md:px-0">
+        The Brands We Are Scaling. <span class="text-highlight-grizzle-wide">The Numbers They Hit.</span>
+      </h2>
+    </div>
+
+    <div class="grid gap-6 mb-12">
+      {caseStudies.map((study, index) => (
+        <>
+          {index % 2 === 1 && (
+            <div class="py-8">
+              <button
+                data-scroll-to="typeform-section"
+                class="cta-button w-full py-6 font-semibold rounded-full transition-all group border border-white/30"
+              >
+                <span class="flex items-center justify-center gap-3">
+                  Book A Strategy Call
+                  <span class="cta-icon-pulse inline-flex" set:html={ctaIconSvg} />
+                </span>
+              </button>
+            </div>
+          )}
+          <div class="bg-transparent rounded-2xl overflow-hidden transition-all duration-300 group">
+            <div class="flex flex-col lg:flex-row">
+              {/* Content */}
+              <div class={`flex-1 lg:w-3/5 ${study.caseNumber === 9 ? 'p-6 md:p-6' : 'p-6 md:p-6 lg:pr-4'}`}>
+                <h3 class="text-base md:text-xl font-bold text-slate-900 mb-2 transition-colors leading-tight" set:html={highlightTitle(study.title, study.caseNumber)} />
+
+                <p class="font-medium text-sm mb-4" style="color: #5A8AC7;">{study.subtitle}</p>
+
+                {study.description && (
+                  <ul class="text-slate-600 text-sm leading-relaxed space-y-2 list-disc pl-5">
+                    {study.description.split('. ').filter((p: string) => p.trim()).map((point: string) => (
+                      <li>{point.trim().replace(/\.$/, '')}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+
+              {/* Media */}
+              {(study.proofImage || study.proofVideo || study.beforeImage || study.testimonialImage) && (
+                <div class="flex-1 lg:w-2/5 p-4 lg:pl-4 lg:pr-6 lg:py-6 bg-transparent flex flex-col gap-4">
+                  {study.beforeImage && study.afterImage ? (
+                    <div class="flex-1 lg:flex-none">
+                      <p class="text-xs text-slate-600 uppercase tracking-wide mb-2 font-semibold">Results Proof</p>
+                      <div class="flex flex-col items-center gap-2">
+                        <div class="w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                          <img src={study.beforeImage} alt="Before results" class="w-full h-auto object-contain" loading="lazy" />
+                        </div>
+                        <div class="flex-shrink-0 py-2" set:html={arrowDownSvg} />
+                        <div class="w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                          <img src={study.afterImage} alt="After results" class="w-full h-auto object-contain" loading="lazy" />
+                        </div>
+                      </div>
+                    </div>
+                  ) : study.proofVideo && study.caseNumber !== 1 ? (
+                    <div class="flex-1 lg:flex-none lg:w-full lg:max-w-4xl">
+                      <p class="text-xs text-slate-600 uppercase tracking-wide mb-3 font-semibold">Client Testimonial</p>
+                      <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow w-full" style="aspect-ratio: 16 / 9;">
+                        <iframe
+                          width="100%"
+                          height="100%"
+                          src={study.proofVideo}
+                          title="Client Demo"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                          style="border: none;"
+                          loading="lazy"
+                        ></iframe>
+                      </div>
+                    </div>
+                  ) : study.proofImage && study.caseNumber !== 1 ? (
+                    <div class="flex-1 lg:flex-none lg:w-full">
+                      <div class="space-y-4">
+                        <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow w-full">
+                          <img src={study.proofImage} alt="Results proof" class="w-full h-auto object-contain" loading="lazy" />
+                        </div>
+                        {study.proofImage2 && (
+                          <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <img src={study.proofImage2} alt="Additional results proof" class="w-full h-auto object-contain" loading="lazy" />
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ) : null}
+                  {study.testimonialImage && (
+                    <div class="flex-1 lg:flex-none">
+                      {!study.hideTestimonialLabel && (
+                        <p class="text-xs text-slate-600 uppercase tracking-wide mb-2 font-semibold">Client Testimonial</p>
+                      )}
+                      <div class={`rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow ${study.caseNumber === 1 ? 'h-auto' : 'h-40 lg:h-44'}`}>
+                        {study.caseNumber === 1 ? (
+                          <div style="padding: 56.25% 0 0 0; position: relative;">
+                            <iframe
+                              src="https://player.vimeo.com/video/1164842822?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+                              frameborder="0"
+                              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                              title="Client Testimonial"
+                              loading="lazy"
+                            ></iframe>
+                          </div>
+                        ) : (
+                          <img src={study.testimonialImage} alt="Client testimonial" class="w-full h-full object-cover" loading="lazy" />
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        </>
+      ))}
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="flex flex-col items-center">
+      <button
+        data-scroll-to="typeform-section"
+        class="cta-button w-full max-w-lg px-8 py-6 text-lg font-semibold rounded-full transition-all group border border-white/30"
+      >
+        <span class="flex items-center justify-center gap-3">
+          Book A Strategy Call
+          <span class="cta-icon-pulse inline-flex" set:html={ctaIconSvg} />
+        </span>
+      </button>
+      <p class="text-slate-500 text-sm mt-3">*Quick 30 Second Application*</p>
+    </div>
+  </div>
+</section>

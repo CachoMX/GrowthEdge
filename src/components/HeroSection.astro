@@ -1,0 +1,73 @@
+---
+// Static hero section - scripts loaded globally in Layout.astro
+---
+
+<section
+  class="relative flex items-center justify-center px-4 pt-8 pb-6 md:pb-8 overflow-hidden"
+  style="min-height: calc(100vh - 120px); background: linear-gradient(to bottom, white 0%, rgba(90, 138, 199, 0.12) 100%);"
+>
+  <!-- Gradient orbs -->
+  <div
+    class="absolute -top-16 -left-16 w-64 h-64 md:w-80 md:h-80 rounded-full blur-3xl opacity-30 animate-pulse"
+    style="background-color: #5A8AC7;"
+  ></div>
+  <div
+    class="absolute -bottom-16 -right-16 w-80 h-80 md:w-96 md:h-96 rounded-full blur-3xl opacity-30 animate-pulse"
+    style="background-color: #5A8AC7; animation-delay: 1s;"
+  ></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto text-center">
+    <!-- Eyebrow -->
+    <p class="font-medium text-sm md:text-base tracking-wide mb-6 px-4" style="color: #5A8AC7;">
+      <span class="noise-badge">
+        For Brands Spending $10K+ Per Month on Google Ads
+      </span>
+    </p>
+
+    <!-- Main headline -->
+    <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6 px-2">
+      We <span class="text-highlight-grizzle">Scale</span> Your <span class="text-highlight-grizzle">Google Ads</span> <span class="text-highlight-grizzle">Exponentially</span> While Your <span class="text-highlight-grizzle">ROAS</span> Stays <span class="text-highlight-grizzle">Dialled</span>.
+    </h1>
+
+    <!-- Subheadline -->
+    <p class="text-slate-600 text-sm md:text-lg max-w-3xl mx-auto mb-8 md:mb-10 leading-relaxed px-4">
+      We have driven $150M+ for 200+ brands — from $30k months to $1.3M months.
+    </p>
+
+    <!-- Wistia Video -->
+    <div class="relative max-w-3xl mx-auto mb-6 md:mb-10 shadow-2xl px-2">
+      <style>
+        wistia-player[media-id='gnbxkqnma5']:not(:defined) {
+          background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/gnbxkqnma5/swatch');
+          display: block;
+          filter: blur(5px);
+          padding-top: 56.25%;
+        }
+      </style>
+      <wistia-player media-id="gnbxkqnma5" aspect="1.7777777777777777"></wistia-player>
+    </div>
+
+    <!-- CTA -->
+    <div class="max-w-3xl mx-auto px-4">
+      <button
+        data-scroll-to="typeform-section"
+        class="cta-button w-full py-6 md:py-8 text-base md:text-lg font-semibold rounded-full transition-all group relative overflow-hidden border border-white/30"
+      >
+        <span class="relative z-10 flex items-center justify-center gap-3">
+          Book A Strategy Call
+          <span class="cta-icon-pulse inline-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <path d="m9 9 5 12 1.774-5.226L21 14 9 9z" />
+              <path d="m16.071 16.071 4.243 4.243" />
+              <path d="m7.188 2.239.777 2.897" />
+              <path d="M5.136 7.965l-2.898-.777" />
+              <path d="M14.869 5.136l2.898-.777" />
+              <path d="m2.239 14.869.777-2.898" />
+            </svg>
+          </span>
+        </span>
+      </button>
+      <p class="text-slate-500 text-sm mt-3">*Quick 30 Second Application*</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,106 @@
+---
+interface Props {
+  title?: string;
+}
+const { title = "GrowthEdge — Scale Your Google Ads Exponentially" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content="We scale your Google Ads exponentially while your ROAS stays dialled. $150M+ driven for 200+ brands." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Wistia Player -->
+    <script src="https://fast.wistia.com/player.js" async></script>
+    <script src="https://fast.wistia.com/embed/gnbxkqnma5.js" async type="module"></script>
+
+    <!-- Vimeo Player -->
+    <script src="https://player.vimeo.com/api/player.js" async></script>
+  </head>
+  <body class="min-h-screen bg-[#f5f7fb] relative">
+    <!-- Global noise overlay -->
+    <div
+      class="fixed inset-0 opacity-[0.03] pointer-events-none z-0"
+      style="background-image: url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E&quot;);"
+    ></div>
+
+    <!-- Hidden SVG filter (grizzle) -->
+    <svg style="position: absolute; width: 0; height: 0;">
+      <filter id="grizzle">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" result="noise" seed="5" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </svg>
+
+    <div class="relative z-10">
+      <slot />
+    </div>
+
+    <!-- Typeform embed script -->
+    <script src="https://embed.typeform.com/next/embed.js" async></script>
+
+    <!-- Page-level interactivity -->
+    <script>
+      // Smooth scroll for CTA buttons
+      document.addEventListener('click', (e) => {
+        const target = (e.target as HTMLElement).closest('[data-scroll-to]');
+        if (target) {
+          const id = target.getAttribute('data-scroll-to');
+          if (id) {
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+
+      // Lightbox
+      const lightbox = document.getElementById('lightbox-modal');
+      const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement | null;
+
+      document.addEventListener('click', (e) => {
+        const trigger = (e.target as HTMLElement).closest('[data-lightbox]');
+        if (trigger && lightbox && lightboxImg) {
+          lightboxImg.src = trigger.getAttribute('data-lightbox') || '';
+          lightbox.classList.remove('hidden');
+          lightbox.classList.add('flex');
+        }
+      });
+
+      function closeLightbox() {
+        if (lightbox) {
+          lightbox.classList.add('hidden');
+          lightbox.classList.remove('flex');
+        }
+      }
+
+      lightbox?.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.getElementById('lightbox-close')?.addEventListener('click', closeLightbox);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+
+      // Scroll fade-in with Intersection Observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll('.fade-in-up').forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

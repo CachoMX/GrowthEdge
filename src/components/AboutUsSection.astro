@@ -1,0 +1,64 @@
+---
+const team = [
+  {
+    name: "Joel Davies",
+    role: "Founder",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/b1cf7ed2a_dRvIr9eTzBqYKHkIvPW8j2f8lc.jpeg",
+    bio: [
+      "The founder of GrowthEdge and a hands-on entrepreneur with a track record of building and scaling multiple successful brands. He\u2019s deeply focused on helping businesses unlock more growth from Google\u2014bringing a practical, operator\u2019s mindset to acquisition, experimentation, and performance.",
+      "He\u2019s known for spotting high-leverage opportunities others miss, simplifying complex problems into clear next steps, and pushing for execution that drives measurable results. Whether he\u2019s shaping strategy or diving into the details, Joel brings a calm, data-led approach and a strong bias toward action."
+    ]
+  },
+  {
+    name: "Jack Davies",
+    role: "Founder",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/de02a45c4_N5J8vpOxU7xbzz4c5is8mdGJZM.jpeg",
+    bio: [
+      "With 8 years experience in ecommerce from the early days of the industry, to running a 7-figure high-ticket reselling store, Jack\u2019s path has led to the birth of GrowthEdge. Seeing an opportunity in the space for someone who has truly grown their own brand to enter the agency scene and do things differently.",
+      "Outside of this with any spare time, Jack spends time attending Richmond games, travelling with his wife, and collecting 4k movies."
+    ]
+  }
+];
+---
+
+<section class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+        Meet <span class="text-highlight-grizzle">The Owners</span>
+      </h2>
+      <p class="text-slate-600 max-w-xl mx-auto">
+        Built by entrepreneurs who've scaled brands to millions — and now we help you do the same
+      </p>
+    </div>
+
+    <div class="space-y-8">
+      {team.map((member) => (
+        <div
+          class="bg-white/30 backdrop-blur-sm rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-start"
+          style="border: 1px solid rgba(90, 138, 199, 0.2);"
+        >
+          <div class="flex-shrink-0 w-64 md:w-40 h-80 md:h-48 rounded-xl overflow-hidden shadow-md mx-auto md:mx-0">
+            <img
+              src={member.image}
+              alt={member.name}
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-slate-900 mb-1">{member.name}</h3>
+            <p class="font-semibold text-base mb-4" style="color: #5A8AC7;">
+              {member.role}
+            </p>
+            <div class="space-y-3">
+              {member.bio.map((paragraph) => (
+                <p class="text-slate-600 text-sm leading-relaxed">{paragraph}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

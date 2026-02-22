@@ -1,0 +1,79 @@
+---
+const logos = [
+  { name: "The Great Fire Company", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/4682b250a_logo_white_2.png" },
+  { name: "Calming Co", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/da6c1c406_Asset_7_6336b6d1-6aa1-49c5-8ea0-40fbf636787c_1001x255.png" },
+  { name: "Indoor Golf Outlet", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/6c42b30d3_Indoor-Golf-Outlet-Logo-White-600x200_a35ad9cd-4ec5-4b6b-8130-bf79b501f677_400x.png" },
+  { name: "Krush Kandy", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/3993b9899_Krush_Medium_Banner_US_Landscape.png" },
+  { name: "Lyric Cycles", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ec10cbc91_Lyric_Cycles_Vintage_7__white_no_details_500x.png" },
+  { name: "Premium Saunas", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/c53bb2455_new-logo-premium-saunas_600x.png" },
+  { name: "Off-Grid Source", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ddc71b32d_image.png" },
+  { name: "Garmin", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/229d91707_pngimg_com_-_garmin_PNG7.png" },
+  { name: "Royal Fire Pits", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/cef8be0d6_Royal_Fire_Pits_Logo_No_Background_600x125_px__1_.png" },
+  { name: "Sauna Heaters", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/992ac3ef7_Screenshot_2024-12-04_at_1_09_40_pm.png" },
+  { name: "Sleep by Santi", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/efc02a056_SleepBySanti_White_250x_2x.png" },
+  { name: "TAVO", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/286530eea_TAVOlabels_all_2-07_eb3dfd3a-53cc-44a1-9cbc-d383a1913dfe.png" },
+  { name: "VitalTrack", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ee443bc2b_vitallogo.png" },
+  { name: "Yerba Magic", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/1053d16ae_White_Logo_Checkout_3_b78bb9d9-9a1a-4f36-900d-b4082364124d.png" },
+  { name: "STRIDE", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ae5c31af1_STRIDE_logo.png" },
+  { name: "Daily Dose", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/af12a2050_Daily_Dose_logo.png" },
+  { name: "Fernes", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/8bac5ce09_fernes_logo1.png" },
+  { name: "MATTE Collection", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/e6e3346f1_MATTE_Collection_logo.png" },
+  { name: "Lakewood University", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/ecd19cdcf_Lakewood_University_logo.png" },
+  { name: "New Client", url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69896edb8c6aa7e8462b7a54/50a808264_image.png" },
+];
+
+const midPoint = Math.ceil(logos.length / 2);
+const topRow = logos.slice(0, midPoint);
+const bottomRow = logos.slice(midPoint);
+---
+
+<section
+  class="py-2 md:py-4 px-4 overflow-hidden"
+  style="background: linear-gradient(to bottom, rgba(90, 138, 199, 0.12) 0%, rgba(90, 138, 199, 0.06) 60%, white 100%);"
+>
+  <div class="max-w-7xl mx-auto">
+    <p class="text-center text-slate-600 text-sm mb-8 font-medium">
+      TRUSTED BY LEADING BRANDS
+    </p>
+
+    <div class="space-y-6">
+      <!-- Top row (scroll left) -->
+      <div class="relative">
+        <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#fafafa] to-transparent z-10"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#fafafa] to-transparent z-10"></div>
+        <div class="logo-scroll-left flex gap-12 items-center">
+          {[...topRow, ...topRow].map((logo) => (
+            <div class="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+              <img
+                src={logo.url}
+                alt={logo.name}
+                class="max-w-full max-h-full object-contain opacity-60 hover:opacity-90 transition-opacity"
+                style="filter: grayscale(100%);"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Bottom row (scroll right) -->
+      <div class="relative">
+        <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#fafafa] to-transparent z-10"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#fafafa] to-transparent z-10"></div>
+        <div class="logo-scroll-right flex gap-12 items-center">
+          {[...bottomRow, ...bottomRow].map((logo) => (
+            <div class="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+              <img
+                src={logo.url}
+                alt={logo.name}
+                class="max-w-full max-h-full object-contain opacity-60 hover:opacity-90 transition-opacity"
+                style="filter: grayscale(100%);"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
